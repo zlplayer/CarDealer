@@ -1,0 +1,13 @@
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\bin\Debug\CarDealer.exe.config
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\bin\Debug\CarDealer.exe
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\bin\Debug\CarDealer.pdb
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\bin\Debug\Guna.UI2.dll
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.AssemblyReference.cache
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.SuggestedBindingRedirects.cache
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.Properties.Resources.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.SplashForm.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.GenerateResource.cache
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.CoreCompileInputs.cache
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.CopyComplete
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.exe
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.pdb
