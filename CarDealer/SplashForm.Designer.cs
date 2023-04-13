@@ -67,7 +67,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 32F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(319, 112);
+            this.label2.Location = new System.Drawing.Point(302, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(161, 52);
             this.label2.TabIndex = 0;
@@ -79,7 +79,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(255, 82);
+            this.label3.Location = new System.Drawing.Point(218, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 30);
             this.label3.TabIndex = 0;
@@ -114,7 +114,7 @@
             // 
             // guna2ProgressBar1
             // 
-            this.guna2ProgressBar1.Location = new System.Drawing.Point(145, 193);
+            this.guna2ProgressBar1.Location = new System.Drawing.Point(128, 193);
             this.guna2ProgressBar1.Name = "guna2ProgressBar1";
             this.guna2ProgressBar1.Size = new System.Drawing.Size(335, 30);
             this.guna2ProgressBar1.TabIndex = 2;
