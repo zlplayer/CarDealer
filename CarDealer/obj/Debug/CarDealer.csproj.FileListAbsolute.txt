@@ -11,3 +11,9 @@ C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.CoreC
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.CopyComplete
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.exe
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.pdb
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.LoginForm.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.MainForm.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.UserForm.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\bin\Debug\dbCarDealer.mdf
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\bin\Debug\dbCarDealer_log.ldf
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.Images.UserModule.resources
