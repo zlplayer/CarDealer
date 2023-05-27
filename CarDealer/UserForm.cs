@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarDealer.Images;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,17 @@ namespace CarDealer
         private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            UserModule module= new UserModule();
+            module.ShowDialog();
         }
     }
 }
