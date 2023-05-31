@@ -68,6 +68,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbConnect.cs" />
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductModule.Designer.cs">
+      <DependentUpon>ProductModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserModule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductModule.resx">
+      <DependentUpon>ProductModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,6 +170,8 @@
     <Content Include="Images\building-5-48.png" />
     <Content Include="Images\customer-3-48.png" />
     <Content Include="Images\dashboard-lined-48.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\draw.png" />
     <Content Include="Images\log-out-18-48.png" />
     <Content Include="Images\magnifier-lined-48.png" />
     <Content Include="Images\no.png" />

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,31 +34,48 @@ namespace CarDealer
         }
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            
         }
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new UserForm());
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCash_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
 
         }
+        #region Method
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            lblTitle.Text = childForm.Text;
+            panelChild.Controls.Add(childForm);
+            panelChild.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        #endregion method
     }
 }

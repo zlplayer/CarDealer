@@ -144,7 +144,28 @@
   <metadata name="Edit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Edit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHEAAABxARw/gHcAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAArklEQVQ4T9XRPQrCQBDF8fUTtdHTeAax9Sq5gWAhegQ7C+3EQrS30T69B/AAdvp/4MAS3Oxu6YNf
+        E3gzk8RlZoQTHpjoQU4GuOP99cIUSRmihzVsgDwRjc7W5jOqQzaojTbfYIUL+lhgjzaCsc1WNnZJE8FU
+        N/t2qN38x+VfH0y2aCGYDro4IruszLCEhhxg5eh/tqyggj8kuaxcYVvn0JDo2X5K6P0LjNFAYpz7AEpd
+        TMK1RhnHAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="Delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="Delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAGoAAABqAdwYubUAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAAw0lEQVQ4T+3SMQrCQBQE0CWFlYLkBCIW4hmsU+cAFoKNZS6hnZIiRc5g5Q30BuKJ1pkwWZNvgqms
+        DDyczf8ZENZ57z/gyeFu5J27ITgXwRRWcFFu4jvOmKNWAZ45POA6EHdnzYI9HOvWb7gLuyrrRQw3eIL9
+        7xZ3uBuHApVkkCqP9Tsi8y6FjLk6h9AuKGABG2EuNBtUUMIStsJcavYv+FVBAhPg3SfmRLPegjUc6nMf
+        7nA3nM3wDLyuvKpdODu9v/HuBSMXd7xVqlb6AAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

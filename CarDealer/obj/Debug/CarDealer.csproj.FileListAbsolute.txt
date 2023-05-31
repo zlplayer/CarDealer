@@ -17,3 +17,5 @@ C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.UserForm.res
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\bin\Debug\dbCarDealer.mdf
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\bin\Debug\dbCarDealer_log.ldf
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.Images.UserModule.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.ProductForm.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.ProductModule.resources

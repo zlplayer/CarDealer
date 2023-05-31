@@ -47,7 +47,7 @@
             this.lblRole = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.panelChile = new System.Windows.Forms.Panel();
+            this.panelChild = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelDash = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
@@ -353,13 +353,13 @@
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // panelChile
+            // panelChild
             // 
-            this.panelChile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelChile.Location = new System.Drawing.Point(194, 65);
-            this.panelChile.Name = "panelChile";
-            this.panelChile.Size = new System.Drawing.Size(1000, 300);
-            this.panelChile.TabIndex = 5;
+            this.panelChild.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelChild.Location = new System.Drawing.Point(194, 65);
+            this.panelChild.Name = "panelChild";
+            this.panelChild.Size = new System.Drawing.Size(1000, 300);
+            this.panelChild.TabIndex = 5;
             // 
             // panel6
             // 
@@ -386,7 +386,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 680);
             this.Controls.Add(this.panelDash);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panelChile);
+            this.Controls.Add(this.panelChild);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -427,7 +427,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panelChile;
+        private System.Windows.Forms.Panel panelChild;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panelDash;
     }

@@ -15,7 +15,7 @@ namespace CarDealer
 
         public string connection()
         {
-            con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Konzo\source\repos\CarDealer\CarDealer\dbCarDealer.mdf;Integrated Security=True";
+            con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Konzo\source\repos\CarDealer\CarDealer\dbCarDealer.mdf;Integrated Security=True;";
             return con;
         }
     }
