@@ -36,7 +36,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.txtQty = new System.Windows.Forms.TextBox();
-            this.lblpcode = new System.Windows.Forms.Label();
+            this.lblPcode = new System.Windows.Forms.Label();
             this.txtType = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -141,22 +141,23 @@
             // 
             // txtQty
             // 
-            this.txtQty.Location = new System.Drawing.Point(206, 258);
+            this.txtQty.Location = new System.Drawing.Point(205, 258);
             this.txtQty.Name = "txtQty";
             this.txtQty.Size = new System.Drawing.Size(501, 26);
             this.txtQty.TabIndex = 21;
+            this.txtQty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQty_KeyPress);
             // 
-            // lblpcode
+            // lblPcode
             // 
-            this.lblpcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblpcode.AutoSize = true;
-            this.lblpcode.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblpcode.Location = new System.Drawing.Point(16, 377);
-            this.lblpcode.Name = "lblpcode";
-            this.lblpcode.Size = new System.Drawing.Size(59, 20);
-            this.lblpcode.TabIndex = 22;
-            this.lblpcode.Text = "pcode";
-            this.lblpcode.Visible = false;
+            this.lblPcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPcode.AutoSize = true;
+            this.lblPcode.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPcode.Location = new System.Drawing.Point(16, 377);
+            this.lblPcode.Name = "lblPcode";
+            this.lblPcode.Size = new System.Drawing.Size(59, 20);
+            this.lblPcode.TabIndex = 22;
+            this.lblPcode.Text = "pcode";
+            this.lblPcode.Visible = false;
             // 
             // txtType
             // 
@@ -216,6 +217,7 @@
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // label5
             // 
@@ -255,7 +257,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.txtQty);
-            this.Controls.Add(this.lblpcode);
+            this.Controls.Add(this.lblPcode);
             this.Controls.Add(this.txtType);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -283,7 +285,7 @@
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.ComboBox cbCategory;
         public System.Windows.Forms.TextBox txtQty;
-        public System.Windows.Forms.Label lblpcode;
+        public System.Windows.Forms.Label lblPcode;
         public System.Windows.Forms.TextBox txtType;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;

@@ -61,6 +61,7 @@ namespace CarDealer.Images
             }
             catch (Exception ex)
             {
+                cn.Close();
                 MessageBox.Show(ex.Message, title);
             }
         }
@@ -137,7 +138,10 @@ namespace CarDealer.Images
             txtPass.Clear();
             cbRole.SelectedIndex = 0;
             dtDob.Value=DateTime.Now;
+
+            btnUpdate.Enabled = false;
         }
+        //to check field and date of birth
         public void CheckField()
         {
             if(txtName.Text==""|| txtAddress.Text == "")
