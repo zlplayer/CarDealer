@@ -147,12 +147,12 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Edit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAHEAAABxARw/gHcAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAArklEQVQ4T9XRPQrCQBDF8fUTtdHTeAax9Sq5gWAhegQ7C+3EQrS30T69B/AAdvp/4MAS3Oxu6YNf
-        E3gzk8RlZoQTHpjoQU4GuOP99cIUSRmihzVsgDwRjc7W5jOqQzaojTbfYIUL+lhgjzaCsc1WNnZJE8FU
-        N/t2qN38x+VfH0y2aCGYDro4IruszLCEhhxg5eh/tqyggj8kuaxcYVvn0JDo2X5K6P0LjNFAYpz7AEpd
-        TMK1RhnHAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACuSURBVDhP1dE9
+        CsJAEMXx9RO10dN4BrH1KrmBYCF6BDsL7cRCtLfRPr0H8AB2+n/gwBLc7G7pg18TeDOTxGVmhBMemOhB
+        Tga44/31whRJGaKHNWyAPBGNztbmM6pDNqiNNt9ghQv6WGCPNoKxzVY2dkkTwVQ3+3ao3fzH5V8fTLZo
+        IZgOujgiu6zMsISGHGDl6H+2rKCCPyS5rFxhW+fQkOjZfkro/QuM0UBinPsASl1MwrVGGccAAAAASUVO
+        RK5CYII=
 </value>
   </data>
   <metadata name="Delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -160,12 +160,12 @@
   </metadata>
   <data name="Delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAGoAAABqAdwYubUAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAAw0lEQVQ4T+3SMQrCQBQE0CWFlYLkBCIW4hmsU+cAFoKNZS6hnZIiRc5g5Q30BuKJ1pkwWZNvgqms
-        DDyczf8ZENZ57z/gyeFu5J27ITgXwRRWcFFu4jvOmKNWAZ45POA6EHdnzYI9HOvWb7gLuyrrRQw3eIL9
-        7xZ3uBuHApVkkCqP9Tsi8y6FjLk6h9AuKGABG2EuNBtUUMIStsJcavYv+FVBAhPg3SfmRLPegjUc6nMf
-        7nA3nM3wDLyuvKpdODu9v/HuBSMXd7xVqlb6AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        agAAAGoB3Bi5tQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADDSURBVDhP7dIx
+        CsJAFATQJYWVguQEIhbiGaxT5wAWgo1lLqGdkiJFzmDlDfQG4onWmTBZk2+CqawMPJzN/xkQ1nnvP+DJ
+        4W7knbshOBfBFFZwUW7iO86Yo1YBnjk84DoQd2fNgj0c69ZvuAu7KutFDDd4gv3vFne4G4cClWSQKo/1
+        OyLzLoWMuTqH0C4oYAEbYS40G1RQwhK2wlxq9i/4VUECE+DdJ+ZEs96CNRzqcx/ucDeczfAMvK68ql04
+        O72/8e4FIxd3vFWqVvoAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

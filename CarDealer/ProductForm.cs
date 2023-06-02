@@ -57,11 +57,9 @@ namespace CarDealer
             {
                 if (MessageBox.Show("Are you sure you want to delete this items?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cn.Open();
-                    cm = new SqlCommand("DELETED FROM tbProduct WHERE pcode LIKE '" + dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", cn);
-                    cm.ExecuteNonQuery();
-                    cn.Close();
-                    MessageBox.Show("Item record has been successfully removed", title, MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    dbcon.executeQuery("DELETE FROM tbProduct WHERE pcode LIKE '" + dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
+                    
+                    MessageBox.Show("Item record has been successfully removed", title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             LoadProduct();

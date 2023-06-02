@@ -48,10 +48,8 @@ namespace CarDealer
             {
                 if(MessageBox.Show("Are you sure you want to delete this record?","Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cn.Open();
-                    cm = new SqlCommand("DELETE FROM tbUser WHERE id LIKE'"+ dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'",cn);
-                    cm.ExecuteNonQuery();
-                    cn.Close();
+                    dbcon.executeQuery("DELETE FROM tbUser WHERE id LIKE'" + dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
+                   
                     MessageBox.Show("User data has been successfully removed", title, MessageBoxButtons.OK, MessageBoxIcon.Question);
 
                 }
@@ -61,7 +59,7 @@ namespace CarDealer
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-
+            LoadUser();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -88,5 +86,15 @@ namespace CarDealer
             cn.Close();
         }
         #endregion Method
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
