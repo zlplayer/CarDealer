@@ -33,7 +33,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtPhone = new System.Windows.Forms.TextBox();
-            this.lbluid = new System.Windows.Forms.Label();
+            this.lblcid = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -95,26 +95,26 @@
             // 
             this.txtPhone.Location = new System.Drawing.Point(206, 211);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(501, 26);
+            this.txtPhone.Size = new System.Drawing.Size(501, 20);
             this.txtPhone.TabIndex = 21;
             // 
-            // lbluid
+            // lblcid
             // 
-            this.lbluid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbluid.AutoSize = true;
-            this.lbluid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbluid.Location = new System.Drawing.Point(16, 276);
-            this.lbluid.Name = "lbluid";
-            this.lbluid.Size = new System.Drawing.Size(27, 18);
-            this.lbluid.TabIndex = 20;
-            this.lbluid.Text = "uid";
-            this.lbluid.Visible = false;
+            this.lblcid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblcid.AutoSize = true;
+            this.lblcid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblcid.Location = new System.Drawing.Point(16, 276);
+            this.lblcid.Name = "lblcid";
+            this.lblcid.Size = new System.Drawing.Size(27, 18);
+            this.lblcid.TabIndex = 20;
+            this.lblcid.Text = "cid";
+            this.lblcid.Visible = false;
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(206, 158);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(501, 26);
+            this.txtAddress.Size = new System.Drawing.Size(501, 20);
             this.txtAddress.TabIndex = 15;
             // 
             // label4
@@ -131,7 +131,7 @@
             // 
             this.txtName.Location = new System.Drawing.Point(206, 103);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(501, 26);
+            this.txtName.Size = new System.Drawing.Size(501, 20);
             this.txtName.TabIndex = 13;
             // 
             // label2
@@ -206,7 +206,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.lbluid);
+            this.Controls.Add(this.lblcid);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtName);
@@ -229,7 +229,7 @@
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.TextBox txtPhone;
-        public System.Windows.Forms.Label lbluid;
+        public System.Windows.Forms.Label lblcid;
         public System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtName;

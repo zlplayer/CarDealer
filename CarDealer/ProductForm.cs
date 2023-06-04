@@ -41,7 +41,7 @@ namespace CarDealer
             string colName = dgvProduct.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
-                ProductModule module= new ProductModule(this);
+                ProductModule module = new ProductModule(this);
                 module.lblPcode.Text = dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
                 module.txtName.Text = dgvProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
                 module.txtType.Text = dgvProduct.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -53,13 +53,12 @@ namespace CarDealer
                 module.btnUpdate.Enabled = true;
                 module.ShowDialog();
             }
-            else if (colName=="Delete")
+            else if (colName == "Delete")
             {
                 if (MessageBox.Show("Are you sure you want to delete this items?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     dbcon.executeQuery("DELETE FROM tbProduct WHERE pcode LIKE '" + dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
-                    
-                    MessageBox.Show("Item record has been successfully removed", title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Item record has been successfully removed!", title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             LoadProduct();
@@ -69,7 +68,7 @@ namespace CarDealer
         {
             int i = 0;
             dgvProduct.Rows.Clear();
-            cm = new SqlCommand("SELECT * FROM tbProduct WHERE CONCAT(pname,ptype,pcategory) LIKE'%" + txtSearch.Text + "%'", cn);
+            cm = new SqlCommand("SELECT * FROM tbProduct WHERE CONCAT(pname,ptype,pcategory) LIKE '%" + txtSearch.Text + "%'", cn);
             cn.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())

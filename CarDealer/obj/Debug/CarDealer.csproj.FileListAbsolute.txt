@@ -40,3 +40,5 @@ C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.CoreC
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.csproj.CopyComplete
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.exe
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.pdb
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerForm.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerModule.resources

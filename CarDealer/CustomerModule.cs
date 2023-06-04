@@ -60,7 +60,36 @@ namespace CarDealer
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            try
+            {
+                CheckField();
+                if (check)
+                {
+                    if (MessageBox.Show("Are you sure you want to Edit this record?", "Record Edit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        cm = new SqlCommand("UPDATE tbCustomer SET name=@name, address=@address, phone=@phone WHERE id=@id", cn);
+                        cm.Parameters.AddWithValue("@id", lblcid.Text);
+                        cm.Parameters.AddWithValue("@name", txtName.Text);
+                        cm.Parameters.AddWithValue("@address", txtAddress.Text);
+                        cm.Parameters.AddWithValue("@phone", txtPhone.Text);
 
+                        cn.Open();
+                        cm.ExecuteNonQuery();
+                        cn.Close();
+                        MessageBox.Show("Customer data has been successfully updated!", title);
+                        Clear();
+                        customer.LoadCustomer();
+                        this.Dispose();
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                cn.Close();
+                MessageBox.Show(ex.Message, title);
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

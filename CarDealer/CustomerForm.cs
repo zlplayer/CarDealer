@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarDealer.Images;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,7 +40,29 @@ namespace CarDealer
 
         private void dgvCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            string colName = dgvCustomer.Columns[e.ColumnIndex].Name;
+            if (colName == "Edit")
+            {
+                CustomerModule module = new CustomerModule(this);
+                module.lblcid.Text = dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString();
+                module.txtName.Text = dgvCustomer.Rows[e.RowIndex].Cells[2].Value.ToString();
+                module.txtAddress.Text = dgvCustomer.Rows[e.RowIndex].Cells[3].Value.ToString();
+                module.txtPhone.Text = dgvCustomer.Rows[e.RowIndex].Cells[4].Value.ToString();
 
+                module.btnSave.Enabled = false;
+                module.btnUpdate.Enabled = true;
+                module.ShowDialog();
+            }
+            else if (colName == "Delete")
+            {
+                if (MessageBox.Show("Are you sure you want to delete this customer record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    dbcon.executeQuery("DELETE FROM tbCustomer WHERE id LIKE'" + dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
+                    MessageBox.Show("Customer data has been successfully removed", title, MessageBoxButtons.OK, MessageBoxIcon.Question);
+                }
+            }
+
+            LoadCustomer();
         }
         #region Method
         public void LoadCustomer()
