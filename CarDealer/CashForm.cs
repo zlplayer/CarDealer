@@ -43,7 +43,53 @@ namespace CarDealer
 
         private void btnCash_Click(object sender, EventArgs e)
         {
-            
+            CashCustomer customer = new CashCustomer(this);
+            customer.ShowDialog();
+            if(MessageBox.Show("Are you shure you want to cash this product?", "Cashing", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                getTransno();
+                for(int i=0; i <dgvCash.Rows.Count; i++)
+                {
+                    dbcon.executeQuery("UPDATE tbProduct SET pqty= pqty - " + int.Parse(dgvCash.Rows[i].Cells[4].Value.ToString()) + " WHERE pcode LIKE " + dgvCash.Rows[i].Cells[2].Value.ToString() + "");
+                }
+                dgvCash.Rows.Clear();
+            }
+        }
+        private void dgvCash_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colName = dgvCash.Columns[e.ColumnIndex].Name;
+            removeitem:
+            if (colName =="Delete")
+            {
+                if (MessageBox.Show("Are you sure you want to delete this cash?", "Delete Cash", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    dbcon.executeQuery("DELETE FROM tbCash WHERE cashid LIKE '" + dgvCash.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
+                    MessageBox.Show("Cash record has been successfully removed!", title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }  
+            }
+            else if (colName == "Increase")
+            {
+                int i = checkPqty(dgvCash.Rows[e.RowIndex].Cells[2].Value.ToString());
+                if (int.Parse(dgvCash.Rows[e.RowIndex].Cells[4].Value.ToString()) < i)
+                {
+                    dbcon.executeQuery("UPDATE tbCash SET qty = qty + " + 1 + " WHERE cashid LIKE '" + dgvCash.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
+                }
+                else
+                {
+                    MessageBox.Show("Remaining quantity on hand is " + i + "!", "Out of Stock ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            else if (colName == "Decrease")
+            {
+                if (int.Parse(dgvCash.Rows[e.RowIndex].Cells[4].Value.ToString()) == 1)
+                {
+                    colName = "Delete";
+                    goto removeitem;
+                }
+                dbcon.executeQuery("UPDATE tbCash SET qty = qty - " + 1 + " WHERE cashid LIKE '" + dgvCash.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
+            }
+            loadCash();
         }
         #region method
         public void getTransno()
@@ -127,5 +173,7 @@ namespace CarDealer
             return i;
         }
         #endregion method
+
+        
     }
 }

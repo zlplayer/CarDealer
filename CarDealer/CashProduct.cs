@@ -85,5 +85,10 @@ namespace CarDealer
             cn.Close();
         }
         #endregion Method
+
+        private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

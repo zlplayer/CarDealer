@@ -19,6 +19,7 @@ namespace CarDealer
         DbConnect dbcon = new DbConnect();
         SqlDataReader dr;
         string title = "Car Dealer ";
+
         public CustomerForm()
         {
             InitializeComponent();

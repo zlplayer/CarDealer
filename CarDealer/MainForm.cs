@@ -60,7 +60,13 @@ namespace CarDealer
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Exit application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                LoginForm login = new LoginForm();
+                this.Dispose();
+                login.ShowDialog();
+            }
+            
         }
         #region Method
         private Form activeForm = null;

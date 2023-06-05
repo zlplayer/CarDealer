@@ -41,8 +41,8 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Select = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnCash = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -84,8 +84,9 @@
             this.dgvProduct.Location = new System.Drawing.Point(0, 37);
             this.dgvProduct.Name = "dgvProduct";
             this.dgvProduct.RowHeadersVisible = false;
-            this.dgvProduct.Size = new System.Drawing.Size(800, 265);
+            this.dgvProduct.Size = new System.Drawing.Size(800, 318);
             this.dgvProduct.TabIndex = 9;
+            this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
             // 
             // Column1
             // 
@@ -143,10 +144,28 @@
             this.panel2.Controls.Add(this.btnCash);
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 302);
+            this.panel2.Location = new System.Drawing.Point(0, 355);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 146);
             this.panel2.TabIndex = 10;
+            // 
+            // btnCash
+            // 
+            this.btnCash.AutoRoundedCorners = true;
+            this.btnCash.BorderRadius = 22;
+            this.btnCash.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCash.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCash.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCash.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCash.FillColor = System.Drawing.Color.White;
+            this.btnCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(172)))), ((int)(((byte)(220)))));
+            this.btnCash.Location = new System.Drawing.Point(630, 27);
+            this.btnCash.Name = "btnCash";
+            this.btnCash.Size = new System.Drawing.Size(144, 47);
+            this.btnCash.TabIndex = 10;
+            this.btnCash.Text = "Submit";
+            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // txtSearch
             // 
@@ -163,32 +182,14 @@
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtSearch.IconLeft")));
-            this.txtSearch.Location = new System.Drawing.Point(201, 62);
+            this.txtSearch.Location = new System.Drawing.Point(236, 27);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Search here";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(345, 38);
+            this.txtSearch.Size = new System.Drawing.Size(345, 47);
             this.txtSearch.TabIndex = 2;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // btnCash
-            // 
-            this.btnCash.AutoRoundedCorners = true;
-            this.btnCash.BorderRadius = 20;
-            this.btnCash.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCash.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCash.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCash.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCash.FillColor = System.Drawing.Color.White;
-            this.btnCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(172)))), ((int)(((byte)(220)))));
-            this.btnCash.Location = new System.Drawing.Point(626, 62);
-            this.btnCash.Name = "btnCash";
-            this.btnCash.Size = new System.Drawing.Size(144, 43);
-            this.btnCash.TabIndex = 10;
-            this.btnCash.Text = "Submit";
-            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // CashProduct
             // 
@@ -198,7 +199,7 @@
             this.Controls.Add(this.dgvProduct);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CashProduct";

@@ -46,3 +46,4 @@ C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerForm
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerModule.resources
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashForm.resources
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashProduct.resources
+C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashCustomer.resources
