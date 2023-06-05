@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
@@ -53,7 +54,8 @@ namespace CarDealer
 
         private void btnCash_Click(object sender, EventArgs e)
         {
-            
+            openChildForm(new CashForm(this));
+                
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -76,6 +78,7 @@ namespace CarDealer
             childForm.BringToFront();
             childForm.Show();
         }
+       
         #endregion method
     }
 }

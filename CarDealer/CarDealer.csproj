@@ -67,6 +67,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashForm.Designer.cs">
+      <DependentUpon>CashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashProduct.Designer.cs">
+      <DependentUpon>CashProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +136,12 @@
     <Compile Include="UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CashForm.resx">
+      <DependentUpon>CashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashProduct.resx">
+      <DependentUpon>CashProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +207,7 @@
     <Content Include="Images\customer-3-48.png" />
     <Content Include="Images\dashboard-lined-48.png" />
     <Content Include="Images\delete.png" />
+    <None Include="Images\down.png" />
     <Content Include="Images\draw.png" />
     <Content Include="Images\log-out-18-48.png" />
     <Content Include="Images\magnifier-lined-48.png" />

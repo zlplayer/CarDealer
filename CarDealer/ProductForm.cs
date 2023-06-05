@@ -33,7 +33,7 @@ namespace CarDealer
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-
+            LoadProduct();
         }
 
         private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -42,3 +42,7 @@ C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.exe
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.pdb
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerForm.resources
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerModule.resources
+C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerForm.resources
+C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerModule.resources
+C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashForm.resources
+C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashProduct.resources
