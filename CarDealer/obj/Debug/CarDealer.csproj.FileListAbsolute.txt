@@ -47,3 +47,6 @@ C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CustomerModu
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashForm.resources
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashProduct.resources
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashCustomer.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashCustomer.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashForm.resources
+C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashProduct.resources
