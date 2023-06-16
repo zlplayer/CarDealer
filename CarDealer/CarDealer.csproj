@@ -97,6 +97,12 @@
     <Compile Include="CustomerModule.Designer.cs">
       <DependentUpon>CustomerModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DbConnect.cs" />
     <Compile Include="ProductForm.cs">
       <SubType>Form</SubType>
@@ -157,6 +163,9 @@
     <EmbeddedResource Include="CustomerModule.resx">
       <DependentUpon>CustomerModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,11 +222,15 @@
     <Content Include="Images\1.jpg" />
     <Content Include="Images\banknote-16-48.png" />
     <Content Include="Images\building-5-48.png" />
+    <Content Include="Images\coupew.png" />
     <Content Include="Images\customer-3-48.png" />
     <Content Include="Images\dashboard-lined-48.png" />
     <Content Include="Images\delete.png" />
     <None Include="Images\down.png" />
     <Content Include="Images\draw.png" />
+    <Content Include="Images\f9b70cbb30de5ce96e9a13d4d195f506.png" />
+    <Content Include="Images\frozen-dark-grey.jpg" />
+    <Content Include="Images\kombiw.png" />
     <Content Include="Images\log-out-18-48.png" />
     <Content Include="Images\magnifier-lined-48.png" />
     <Content Include="Images\no.png" />
@@ -226,7 +239,10 @@
     <Content Include="Images\pencil-filled-48.png" />
     <Content Include="Images\plus-circle-filled-48.png" />
     <Content Include="Images\rating.png" />
+    <Content Include="Images\sale.png" />
+    <Content Include="Images\sedanw.png" />
     <Content Include="Images\star-6-48.png" />
+    <Content Include="Images\suvW.png" />
     <Content Include="Images\trash-can-filled-48.png" />
     <Content Include="Images\user-31-32.png" />
     <Content Include="Images\user-5-48.png" />

@@ -48,6 +48,7 @@ namespace CarDealer
             if(MessageBox.Show("Are you shure you want to cash this product?", "Cashing", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 getTransno();
+                main.loadDailySale();
                 for(int i=0; i <dgvCash.Rows.Count; i++)
                 {
                     dbcon.executeQuery("UPDATE tbProduct SET pqty= pqty - " + int.Parse(dgvCash.Rows[i].Cells[4].Value.ToString()) + " WHERE pcode LIKE " + dgvCash.Rows[i].Cells[2].Value.ToString() + "");

@@ -335,7 +335,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CashForm";
-            this.Text = "CASH";
+            this.Text = "Pieniądze";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

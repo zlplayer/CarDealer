@@ -36,6 +36,8 @@ namespace CarDealer
             {
                 guna2ProgressBar1.Value = 0;
                 timer1.Stop();
+                LoginForm login=new LoginForm();
+                login.ShowDialog();
                 this.Hide();
             }
 

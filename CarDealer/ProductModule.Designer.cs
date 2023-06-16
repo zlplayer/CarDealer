@@ -113,8 +113,7 @@
             "Coupe",
             "Sedan",
             "Kombi",
-            "Kabriolet",
-            "Van"});
+            "Suv"});
             this.cbCategory.Location = new System.Drawing.Point(205, 208);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(501, 26);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,11 +51,30 @@
             this.panelChild = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelDash = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.progress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblDailySale = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.panelDash.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -187,6 +207,8 @@
             this.btnLogout.Size = new System.Drawing.Size(194, 45);
             this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "Wyloguj";
+            this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.TextOffset = new System.Drawing.Point(10, 0);
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnCash
@@ -211,6 +233,8 @@
             this.btnCash.Size = new System.Drawing.Size(194, 45);
             this.btnCash.TabIndex = 4;
             this.btnCash.Text = "Pieniądze";
+            this.btnCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCash.TextOffset = new System.Drawing.Point(10, 0);
             this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // btnProduct
@@ -235,6 +259,8 @@
             this.btnProduct.Size = new System.Drawing.Size(194, 45);
             this.btnProduct.TabIndex = 3;
             this.btnProduct.Text = "Produkty";
+            this.btnProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnProduct.TextOffset = new System.Drawing.Point(10, 0);
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnUser
@@ -260,6 +286,8 @@
             this.btnUser.Size = new System.Drawing.Size(194, 45);
             this.btnUser.TabIndex = 2;
             this.btnUser.Text = "Użytkownik";
+            this.btnUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUser.TextOffset = new System.Drawing.Point(10, 0);
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnCustomer
@@ -284,6 +312,8 @@
             this.btnCustomer.Size = new System.Drawing.Size(194, 45);
             this.btnCustomer.TabIndex = 1;
             this.btnCustomer.Text = "Klienci";
+            this.btnCustomer.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCustomer.TextOffset = new System.Drawing.Point(10, 0);
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // btnDashboard
@@ -308,6 +338,8 @@
             this.btnDashboard.Size = new System.Drawing.Size(194, 45);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Panel";
+            this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDashboard.TextOffset = new System.Drawing.Point(10, 0);
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // panel4
@@ -344,7 +376,7 @@
             // 
             // guna2CirclePictureBox1
             // 
-            this.guna2CirclePictureBox1.Image = global::CarDealer.Properties.Resources._1;
+            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(43, 6);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
@@ -373,12 +405,169 @@
             // 
             // panelDash
             // 
+            this.panelDash.Controls.Add(this.panel10);
+            this.panelDash.Controls.Add(this.panel8);
+            this.panelDash.Controls.Add(this.panel7);
             this.panelDash.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDash.Location = new System.Drawing.Point(194, 371);
             this.panelDash.Name = "panelDash";
-            this.panelDash.Padding = new System.Windows.Forms.Padding(3);
+            this.panelDash.Padding = new System.Windows.Forms.Padding(10);
             this.panelDash.Size = new System.Drawing.Size(1000, 309);
             this.panelDash.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label6);
+            this.panel10.Controls.Add(this.pictureBox3);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(10, 10);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(698, 289);
+            this.panel10.TabIndex = 2;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(708, 10);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 289);
+            this.panel8.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.progress);
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(718, 10);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(272, 289);
+            this.panel7.TabIndex = 0;
+            // 
+            // progress
+            // 
+            this.progress.BackColor = System.Drawing.Color.Transparent;
+            this.progress.FillColor = System.Drawing.Color.DarkGray;
+            this.progress.FillOffset = 10;
+            this.progress.FillThickness = 10;
+            this.progress.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.progress.ForeColor = System.Drawing.Color.White;
+            this.progress.InnerColor = System.Drawing.Color.MidnightBlue;
+            this.progress.Location = new System.Drawing.Point(80, 147);
+            this.progress.Maximum = 60;
+            this.progress.Minimum = 0;
+            this.progress.Name = "progress";
+            this.progress.ProgressColor = System.Drawing.Color.DeepSkyBlue;
+            this.progress.ProgressColor2 = System.Drawing.Color.Cyan;
+            this.progress.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.progress.ProgressOffset = 10;
+            this.progress.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.progress.ProgressThickness = 10;
+            this.progress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.progress.ShowText = true;
+            this.progress.Size = new System.Drawing.Size(139, 139);
+            this.progress.TabIndex = 9;
+            this.progress.Text = "00:00:00";
+            this.progress.TextMode = Guna.UI2.WinForms.Enums.ProgressBarTextMode.Custom;
+            this.progress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progress.Value = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(6, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 18);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Dzienny raport";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel9.Controls.Add(this.pictureBox2);
+            this.panel9.Controls.Add(this.label5);
+            this.panel9.Controls.Add(this.lblDailySale);
+            this.panel9.Controls.Add(this.label7);
+            this.panel9.Controls.Add(this.label4);
+            this.panel9.Location = new System.Drawing.Point(6, 28);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(254, 116);
+            this.panel9.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(2, 19);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(67, 66);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(71, 5);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(4, 100);
+            this.label5.TabIndex = 0;
+            // 
+            // lblDailySale
+            // 
+            this.lblDailySale.BackColor = System.Drawing.Color.Transparent;
+            this.lblDailySale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblDailySale.ForeColor = System.Drawing.Color.White;
+            this.lblDailySale.Location = new System.Drawing.Point(99, 1);
+            this.lblDailySale.Name = "lblDailySale";
+            this.lblDailySale.Size = new System.Drawing.Size(152, 26);
+            this.lblDailySale.TabIndex = 0;
+            this.lblDailySale.Text = "0.00";
+            this.lblDailySale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(75, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(127, 18);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Dzienna sprzedaż";
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(81, 67);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(170, 49);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Całkowita dzienna sprzedaż zarejestrowana w inwentarzu";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(254, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(441, 286);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(33, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(168, 97);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Projekt wykonał Konrad Boroń";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // MainForm
             // 
@@ -397,12 +586,21 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.panelDash.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -431,5 +629,18 @@
         public System.Windows.Forms.Label lblUsername;
         public System.Windows.Forms.Label lblRole;
         public Guna.UI2.WinForms.Guna2Button btnUser;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblDailySale;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar progress;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
