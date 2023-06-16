@@ -40,7 +40,7 @@ namespace CarDealer.Images
                 CheckField();
                 if (check)
                 {
-                    if (MessageBox.Show("Are you sure you want to register this user?", "User Registration", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Czy na pewno chcesz zarejestrować tego użytkownika?", "Rejestracja Użytkownika", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cm = new SqlCommand("INSERT INTO tbUser(name,address,phone,role,dob,password)VALUES(@name,@address,@phone,@role,@dob,@password)", cn);
                         cm.Parameters.AddWithValue("@name", txtName.Text);
@@ -53,7 +53,7 @@ namespace CarDealer.Images
                         cn.Open();
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        MessageBox.Show("User has been successfully registered!", title);
+                        MessageBox.Show("Użytkownik został pomyślnie zarejestrowany!", title);
                         Clear();
                         userForm.LoadUser();
                     }
@@ -72,7 +72,7 @@ namespace CarDealer.Images
                 CheckField();
                 if (check)
                 {
-                    if (MessageBox.Show("Are you sure you want to update this record?", "Edit Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Czy na pewno chcesz zaktualizować ten rekord?", "Edytuj rekord", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cm = new SqlCommand("UPDATE tbUser SET name=@name, address=@address, phone=@phone, role=@role, dob=@dob, password=@password WHERE id=@id", cn);
                         cm.Parameters.AddWithValue("@id", lbluid.Text);
@@ -86,7 +86,7 @@ namespace CarDealer.Images
                         cn.Open();
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        MessageBox.Show("User's data has been successfully updated!", title);
+                        MessageBox.Show("Dane użytkownika zostały pomyślnie zaktualizowane!", title);
                         Clear();
                         userForm.LoadUser();
                         this.Dispose();
@@ -146,12 +146,12 @@ namespace CarDealer.Images
         {
             if(txtName.Text==""|| txtAddress.Text == "")
             {
-                MessageBox.Show("Required data filed!","Warning");
+                MessageBox.Show("Wymagane pole danych!", "Ostrzeżenie");
                 return;
             }
             if (checkAge(dtDob.Value) < 18)
             {
-                MessageBox.Show("User is child worker!. Under 18 year","Warning");
+                MessageBox.Show("Użytkownik jest pracownikiem dziecięcym!. Poniżej 18 roku życia", "Ostrzeżenie");
                 return;
             }
             check = true;
@@ -167,6 +167,11 @@ namespace CarDealer.Images
         #endregion Method
 
         private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

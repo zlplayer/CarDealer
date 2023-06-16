@@ -72,9 +72,10 @@
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(12, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 24);
+            this.label1.Size = new System.Drawing.Size(210, 24);
             this.label1.TabIndex = 1;
-            this.label1.Text = "User Register";
+            this.label1.Text = "Rejestracja Użytkownika";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -82,9 +83,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(16, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 18);
+            this.label2.Size = new System.Drawing.Size(58, 18);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Name:";
+            this.label2.Text = "Nazwa:";
             // 
             // txtName
             // 
@@ -99,9 +100,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(16, 157);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 18);
+            this.label4.Size = new System.Drawing.Size(54, 18);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Address: ";
+            this.label4.Text = "Adres: ";
             // 
             // txtAddress
             // 
@@ -116,9 +117,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(16, 207);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 18);
+            this.label5.Size = new System.Drawing.Size(61, 18);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Phone:";
+            this.label5.Text = "Telefon:";
             // 
             // txtPhone
             // 
@@ -134,9 +135,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(16, 313);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 18);
+            this.label6.Size = new System.Drawing.Size(112, 18);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Date of Birth:";
+            this.label6.Text = "Data urodzenia:";
             // 
             // lblPass
             // 
@@ -144,9 +145,9 @@
             this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblPass.Location = new System.Drawing.Point(16, 361);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(79, 18);
+            this.lblPass.Size = new System.Drawing.Size(51, 18);
             this.lblPass.TabIndex = 2;
-            this.lblPass.Text = "Password:";
+            this.lblPass.Text = "Hasło:";
             // 
             // txtPass
             // 
@@ -232,7 +233,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(112, 36);
             this.btnCancel.TabIndex = 8;
-            this.btnCancel.Text = "Wyjdź";
+            this.btnCancel.Text = "Wyczyść";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -244,7 +245,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 18);
             this.label7.TabIndex = 11;
-            this.label7.Text = "Role :";
+            this.label7.Text = "Rola :";
             // 
             // btnClose
             // 

@@ -31,7 +31,7 @@ namespace CarDealer
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Exit application?","Confirm", MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            if(MessageBox.Show("Wyjść z aplikacji?", "Potwierdzać", MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -52,7 +52,7 @@ namespace CarDealer
                 {
                     _name = dr["name"].ToString();
                     _role = dr["role"].ToString();
-                    MessageBox.Show("Welcome  " + _name + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Powitanie  " + _name + " |", "DOSTĘP PRZYZNANY", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     MainForm main= new MainForm();
                     main.lblUsername.Text = _name;
                     main.lblRole.Text = _role;
@@ -65,7 +65,7 @@ namespace CarDealer
                 }
                 else
                 {
-                    MessageBox.Show("Invalid username and password!", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Nieprawidłowa nazwa użytkownika i hasło!", "BRAK DOSTĘPU", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
             }
@@ -78,7 +78,7 @@ namespace CarDealer
         }
         private void btnForGet_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please contact your BOSS!", "FORGET PASSWORD", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Skontaktuj się ze swoim SZEFEM!", "ZAPOMNIAŁEŚ HASŁA", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

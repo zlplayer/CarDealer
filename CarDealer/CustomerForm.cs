@@ -56,10 +56,10 @@ namespace CarDealer
             }
             else if (colName == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this customer record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Czy na pewno chcesz usunąć ten rekord klienta?", "Usuń rekord", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     dbcon.executeQuery("DELETE FROM tbCustomer WHERE id LIKE'" + dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
-                    MessageBox.Show("Customer data has been successfully removed", title, MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    MessageBox.Show("Dane klienta zostały pomyślnie usunięte", title, MessageBoxButtons.OK, MessageBoxIcon.Question);
                 }
             }
 

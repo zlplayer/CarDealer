@@ -35,7 +35,7 @@ namespace CarDealer
                 CheckField();
                 if (check)
                 {
-                    if (MessageBox.Show("Are you sure you want to register this customer?", "customer Registration", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Czy na pewno chcesz zarejestrować tego klienta?", "Rejestracja klienta", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cm = new SqlCommand("INSERT INTO tbCustomer(name,address,phone)VALUES(@name,@address,@phone)", cn);
                         cm.Parameters.AddWithValue("@name", txtName.Text);
@@ -45,7 +45,7 @@ namespace CarDealer
                         cn.Open();
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        MessageBox.Show("Customer has been successfully registered!", title);
+                        MessageBox.Show("Klient został pomyślnie zarejestrowany!", title);
                         Clear();
                         customer.LoadCustomer();
                     }
@@ -65,7 +65,7 @@ namespace CarDealer
                 CheckField();
                 if (check)
                 {
-                    if (MessageBox.Show("Are you sure you want to Edit this record?", "Record Edit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Czy na pewno chcesz edytować ten rekord?", "Edycja rekordu", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cm = new SqlCommand("UPDATE tbCustomer SET name=@name, address=@address, phone=@phone WHERE id=@id", cn);
                         cm.Parameters.AddWithValue("@id", lblcid.Text);
@@ -76,7 +76,7 @@ namespace CarDealer
                         cn.Open();
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        MessageBox.Show("Customer data has been successfully updated!", title);
+                        MessageBox.Show("Dane klienta zostały pomyślnie zaktualizowane!", title);
                         Clear();
                         customer.LoadCustomer();
                         this.Dispose();
@@ -106,7 +106,7 @@ namespace CarDealer
         {
             if (txtName.Text == "" || txtAddress.Text == ""|| txtPhone.Text=="")
             {
-            MessageBox.Show("Required data filed!", "Warning");
+            MessageBox.Show("Pole danych wymagane!", "Ostrzeżenie");
             return;
             }
            

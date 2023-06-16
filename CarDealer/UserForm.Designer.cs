@@ -167,43 +167,43 @@
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column3.HeaderText = "Name";
+            this.Column3.HeaderText = "Nazwa";
             this.Column3.Name = "Column3";
-            this.Column3.Width = 67;
+            this.Column3.Width = 71;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Address";
+            this.Column4.HeaderText = "Adres";
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "Phone";
+            this.Column5.HeaderText = "Telefon";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 69;
+            this.Column5.Width = 76;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column6.HeaderText = "Role";
+            this.Column6.HeaderText = "Rola";
             this.Column6.Name = "Column6";
             this.Column6.Width = 59;
             // 
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column7.HeaderText = "Date of Birth";
+            this.Column7.HeaderText = "Data urodzenia";
             this.Column7.Name = "Column7";
-            this.Column7.Width = 102;
+            this.Column7.Width = 121;
             // 
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column8.HeaderText = "Password";
+            this.Column8.HeaderText = "Hasło";
             this.Column8.Name = "Column8";
-            this.Column8.Width = 90;
+            this.Column8.Width = 69;
             // 
             // Edit
             // 

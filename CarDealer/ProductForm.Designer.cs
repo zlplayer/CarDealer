@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductForm));
             this.dgvProduct = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,10 +44,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,14 +53,14 @@
             this.dgvProduct.AllowUserToAddRows = false;
             this.dgvProduct.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProduct.ColumnHeadersHeight = 30;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -81,70 +81,6 @@
             this.dgvProduct.Size = new System.Drawing.Size(1000, 225);
             this.dgvProduct.TabIndex = 5;
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "No";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 51;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 74;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Name";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column4.HeaderText = "Type";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 63;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "Category";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 91;
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column6.HeaderText = "Qty";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 54;
-            // 
-            // Column7
-            // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column7.HeaderText = "Price";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 65;
-            // 
-            // Edit
-            // 
-            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Edit.HeaderText = "";
-            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
-            this.Edit.Name = "Edit";
-            this.Edit.Width = 5;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
-            this.Delete.Name = "Delete";
-            this.Delete.Width = 5;
             // 
             // panel2
             // 
@@ -210,6 +146,70 @@
             this.panel1.Size = new System.Drawing.Size(1000, 16);
             this.panel1.TabIndex = 3;
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 51;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column2.HeaderText = "Pcode";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 74;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Marka";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column4.HeaderText = "Model";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 72;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column5.HeaderText = "Typ nadwozia";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 122;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column6.HeaderText = "Ilość";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 62;
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column7.HeaderText = "Cena";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 66;
+            // 
+            // Edit
+            // 
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Edit.HeaderText = "";
+            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
+            this.Edit.Name = "Edit";
+            this.Edit.Width = 5;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "";
+            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
+            this.Delete.Name = "Delete";
+            this.Delete.Width = 5;
+            // 
             // ProductForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -230,6 +230,10 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvProduct;
+        private System.Windows.Forms.Panel panel2;
+        private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -239,9 +243,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -40,7 +40,7 @@ namespace CarDealer
                 CheckField();
                 if (check)
                 {
-                    if (MessageBox.Show("Are you sure you want to register this product?", "Product Registration", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Czy na pewno chcesz zarejestrować ten produkt?", "Rejestracja produktu", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cm = new SqlCommand("INSERT INTO tbProduct(pname, ptype, pcategory, pqty, pprice)VALUES(@pname, @ptype, @pcategory, @pqty, @pprice)", cn);
                         cm.Parameters.AddWithValue("@pname", txtName.Text);
@@ -53,7 +53,7 @@ namespace CarDealer
                         cn.Open();
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        MessageBox.Show("Product has been successfully registered!", title);
+                        MessageBox.Show("Produkt został pomyślnie zarejestrowany!", title);
                         Clear();
                         product.LoadProduct();
                     }
@@ -73,7 +73,7 @@ namespace CarDealer
                 CheckField();
                 if (check)
                 {
-                    if (MessageBox.Show("Are you sure you want to Edit this product?", "Product Edited", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Czy na pewno chcesz edytować ten produkt?", "Produkt edytowany", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cm = new SqlCommand("UPDATE tbProduct SET pname=@pname, ptype=@ptype, pcategory=@pcategory, pqty=@pqty, pprice=@pprice WHERE pcode=@pcode", cn);
                         cm.Parameters.AddWithValue("@pcode", lblPcode.Text);
@@ -87,7 +87,7 @@ namespace CarDealer
                         cn.Open();
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        MessageBox.Show("Product has been successfully updated!", title);
+                        MessageBox.Show("Produkt został pomyślnie zaktualizowany!", title);
                        
                         product.LoadProduct();
                         this.Dispose();
@@ -148,7 +148,7 @@ namespace CarDealer
         {
             if (txtName.Text == "" || txtPrice.Text == "" | txtQty.Text == "" | txtType.Text == "")
             {
-                MessageBox.Show("Required data filed!", "Warning");
+                MessageBox.Show("Pole danych wymagane!", "Ostrzeżenie");
                 return;
             }
 

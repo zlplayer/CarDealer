@@ -29,7 +29,7 @@ namespace CarDealer
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Wyjść z aplikacji?", "Potwierdzać", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -71,7 +71,7 @@ namespace CarDealer
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Logout Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Aplikacja do wylogowania?", "Potwierdzać", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 LoginForm login = new LoginForm();
                 this.Dispose();
@@ -82,20 +82,31 @@ namespace CarDealer
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
+            ProgressBar progress = new ProgressBar();
+            this.Controls.Add(progress);
+
             System.Timers.Timer timer = new System.Timers.Timer();
-            timer.Interval= 1000;
+            timer.Interval = 1000;
             timer.Elapsed += Timer_Elapsed;
             timer.Start();
-            
+
         }
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            
-            progress.Invoke((MethodInvoker)delegate
+
+            if (progress.InvokeRequired)
+            {
+                progress.Invoke((MethodInvoker)delegate
+                {
+                    progress.Text = DateTime.Now.ToString("hh:mm:ss");
+                    progress.Value = Convert.ToInt32(DateTime.Now.Second);
+                });
+            }
+            else
             {
                 progress.Text = DateTime.Now.ToString("hh:mm:ss");
                 progress.Value = Convert.ToInt32(DateTime.Now.Second);
-            });
+            }
         }
         #region Method
         private Form activeForm = null;

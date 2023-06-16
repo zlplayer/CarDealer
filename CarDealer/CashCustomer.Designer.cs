@@ -133,15 +133,15 @@
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Name";
+            this.Column3.HeaderText = "Nazwa";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column4.HeaderText = "Phone";
+            this.Column4.HeaderText = "Telefon";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 74;
+            this.Column4.Width = 80;
             // 
             // Choice
             // 

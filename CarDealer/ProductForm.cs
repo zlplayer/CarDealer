@@ -55,10 +55,10 @@ namespace CarDealer
             }
             else if (colName == "Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this items?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Czy na pewno chcesz usunąć te elementy?", "Usuń rekord", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     dbcon.executeQuery("DELETE FROM tbProduct WHERE pcode LIKE '" + dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
-                    MessageBox.Show("Item record has been successfully removed!", title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Rekord elementu został pomyślnie usunięty!", title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             LoadProduct();
