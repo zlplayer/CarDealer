@@ -51,3 +51,8 @@ C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashCustomer
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashForm.resources
 C:\Users\Konzo\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.CashProduct.resources
 C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.Dashboard.resources
+C:\Users\Admin\source\repos\CarDealer\CarDealer\bin\Debug\CarDealer.exe.manifest
+C:\Users\Admin\source\repos\CarDealer\CarDealer\bin\Debug\CarDealer.application
+C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.TrustInfo.xml
+C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.exe.manifest
+C:\Users\Admin\source\repos\CarDealer\CarDealer\obj\Debug\CarDealer.application

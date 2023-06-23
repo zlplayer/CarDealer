@@ -52,6 +52,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelDash = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.progress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
@@ -62,8 +64,6 @@
             this.lblDailySale = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -71,10 +71,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.panelDash.SuspendLayout();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -232,7 +232,7 @@
             this.btnCash.Name = "btnCash";
             this.btnCash.Size = new System.Drawing.Size(194, 45);
             this.btnCash.TabIndex = 4;
-            this.btnCash.Text = "Pieniądze";
+            this.btnCash.Text = "Sprzedaj";
             this.btnCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCash.TextOffset = new System.Drawing.Point(10, 0);
             this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
@@ -258,7 +258,7 @@
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(194, 45);
             this.btnProduct.TabIndex = 3;
-            this.btnProduct.Text = "Produkty";
+            this.btnProduct.Text = "Samochody";
             this.btnProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProduct.TextOffset = new System.Drawing.Point(10, 0);
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
@@ -425,6 +425,27 @@
             this.panel10.Size = new System.Drawing.Size(698, 289);
             this.panel10.TabIndex = 2;
             // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(33, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(168, 97);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Projekt wykonał Konrad Boroń";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(254, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(441, 286);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -548,27 +569,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Całkowita dzienna sprzedaż zarejestrowana w inwentarzu";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(254, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(441, 286);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(33, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(168, 97);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Projekt wykonał Konrad Boroń";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -595,12 +595,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.panelDash.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

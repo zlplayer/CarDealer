@@ -53,11 +53,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 32F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(214, 112);
+            this.label1.Location = new System.Drawing.Point(273, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 52);
+            this.label1.Size = new System.Drawing.Size(91, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "Car";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -65,11 +65,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 32F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(302, 112);
+            this.label2.Location = new System.Drawing.Point(355, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 52);
+            this.label2.Size = new System.Drawing.Size(149, 51);
             this.label2.TabIndex = 0;
             this.label2.Text = "Dealer";
             this.label2.Click += new System.EventHandler(this.label1_Click);
@@ -77,11 +77,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(218, 82);
+            this.label3.Location = new System.Drawing.Point(277, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 30);
+            this.label3.Size = new System.Drawing.Size(162, 29);
             this.label3.TabIndex = 0;
             this.label3.Text = "Konrad Boroń";
             this.label3.Click += new System.EventHandler(this.label1_Click);
@@ -89,11 +89,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(12, 271);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 20);
+            this.label4.Size = new System.Drawing.Size(72, 18);
             this.label4.TabIndex = 0;
             this.label4.Text = "Loading...";
             this.label4.Click += new System.EventHandler(this.label1_Click);
@@ -103,7 +103,7 @@
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = global::CarDealer.Properties.Resources.zd2;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(95, 69);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(151, 52);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(113, 118);
@@ -114,7 +114,7 @@
             // 
             // guna2ProgressBar1
             // 
-            this.guna2ProgressBar1.Location = new System.Drawing.Point(128, 193);
+            this.guna2ProgressBar1.Location = new System.Drawing.Point(159, 179);
             this.guna2ProgressBar1.Name = "guna2ProgressBar1";
             this.guna2ProgressBar1.Size = new System.Drawing.Size(335, 30);
             this.guna2ProgressBar1.TabIndex = 2;
@@ -136,7 +136,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
