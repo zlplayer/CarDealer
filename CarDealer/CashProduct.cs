@@ -17,7 +17,7 @@ namespace CarDealer
         SqlCommand cm = new SqlCommand();
         DbConnect dbcon = new DbConnect();
         SqlDataReader dr;
-        string title = "Pet Shop Management System";
+        string title = "Car Dealer";
         public string uname;
         CashForm cash;
         public CashProduct(CashForm form)
