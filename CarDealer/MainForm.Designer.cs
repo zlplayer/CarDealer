@@ -493,6 +493,7 @@
             this.progress.TextMode = Guna.UI2.WinForms.Enums.ProgressBarTextMode.Custom;
             this.progress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.progress.Value = 10;
+            this.progress.ValueChanged += new System.EventHandler(this.progress_ValueChanged);
             // 
             // label3
             // 

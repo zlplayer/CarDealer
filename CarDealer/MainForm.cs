@@ -149,5 +149,10 @@ namespace CarDealer
         {
 
         }
+
+        private void progress_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
