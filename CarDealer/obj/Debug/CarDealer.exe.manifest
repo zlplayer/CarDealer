@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LjBnZc8OcobC0eDtwPhv1Zf7KVeOeIzA9wQnFrYvkDc=</dsig:DigestValue>
+        <dsig:DigestValue>H2/1FKT5jsQZktZnhAbn3uhr3aiiicgF55Rv/U9/cC0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -90,7 +90,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NX/FCXak7sVDFyCm2VPwjUcHw34WRjTsf0dZuzETYb8=</dsig:DigestValue>
+      <dsig:DigestValue>2dD83SsYWdHf9sbL+fb4cZDJcbDojWYL+7MAPq4zM7w=</dsig:DigestValue>
     </hash>
   </file>
   <file name="dbCarDealer_log.ldf" size="8388608" writeableType="applicationData">
@@ -99,7 +99,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7QbaQhxeqc/leSmh6+5KDt7bKhya0XfY95b8bDhry5w=</dsig:DigestValue>
+      <dsig:DigestValue>1tZpXQNpRX76IdXF2Av9zeWgpqZBFrTp4+GCB3p0HrQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\1.jpg" size="18801">

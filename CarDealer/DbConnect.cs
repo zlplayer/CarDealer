@@ -16,7 +16,7 @@ namespace CarDealer
         
         public string connection()
         {
-            con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\source\repos\CarDealer\CarDealer\dbCarDealer.mdf;Integrated Security=True";
+            con = @"PATH";
             return con;
         }
         public void executeQuery(string sql)
